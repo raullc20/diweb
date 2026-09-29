@@ -1,0 +1,289 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url("../imagenes_video/Gym.jpg");
+  background-size: 100%, 100%;
+  font-family: sans-serif;
+  background-attachment: fixed;
+}
+
+#agrupar {
+  width: 960px;
+  margin: 15px auto;
+}
+
+section h1,
+footer h1,
+nav a,
+aside h3 {
+  font-family: Candara, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/*cabecera*/
+article p {
+  font-family: Calibri, serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+header h1 {
+  font-family:
+    Copperplate Gothic,
+    serif;
+  font-size: 6em;
+  font-weight: normal;
+  text-shadow: 2px 2px black;
+  color: white;
+}
+
+header h3 {
+  font-family: Mooli, serif;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+#cabecera {
+  background-position: center;
+  padding: 80px;
+  border-radius: 10px;
+  background-color: #4a1f1f;
+  box-shadow: 6px 6px 6px #1a1614;
+  margin-bottom: 25px;
+}
+
+/* Navegación */
+nav {
+  padding: 5px 15px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+}
+
+nav a {
+  font-size: 1.5em;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* Accesibilidad: Corrección de outline y añadido de estado focus para navegación por teclado */
+nav a:hover,
+nav a:focus {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Cuerpo */
+section {
+  width: 660px;
+  margin: 20px;
+  float: left;
+}
+
+article,
+aside {
+  display: inline-block;
+  float: left;
+}
+
+article h3,
+article h2 {
+  padding: 10px;
+  color: #ffffff;
+  font-family: Candara, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+article {
+  background: #4a1f1f;
+  box-shadow: 6px 6px 6px #1a1614;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+article p {
+  font-size: 1.3em;
+  text-align: left;
+  font-family: Calibri, serif;
+}
+
+/*columna*/
+aside {
+  float: left;
+  width: 220px;
+  margin: 20px 0px;
+  padding: 20px;
+  background: #4a1f1f;
+  box-shadow: 6px 6px 6px #1a1614;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  /* Accesibilidad: Oscurecido del color para mayor contraste con el fondo  */
+  color: #1a1614;
+}
+
+aside h2 {
+  padding: 8px 15px;
+  font-family: Mooli, serif;
+  font-size: 1.5em;
+  text-shadow: 2px 2px black;
+  color: #ffffff;
+}
+
+aside h3 {
+  font-family: Mooli, serif;
+  font-size: 1.2em;
+  text-shadow: 2px 2px black;
+  color: #ffffff;
+}
+
+aside div {
+  padding: 15px 30px;
+  background-color: #e8dcc4;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+aside p {
+  font-family: Calibri, serif;
+  font-size: 1.3em;
+}
+
+#zumba {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#suplementos {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Pie de página */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #b5654a;
+  font-size: 0.8em;
+  font-family: sans-serif;
+}
+
+footer p {
+  color: #f0e6d2;
+}
+
+/* Pagina de hazte socio */
+
+.registrarseFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-left: 250px;
+}
+
+.form {
+  background-color: #4a1f1f;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: #e8dcc4;
+  z-index: 1;
+}
+
+
+
+::placeholder {
+  color: transparent;
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: #e8dcc4;
+  color: #3b2a1e;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #e8dcc4;
+  color: #1a1614;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  outline: 2px solid #ffffff;
+}
+
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1614;
+}
+
+.input:not(:placeholder-shown) + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
